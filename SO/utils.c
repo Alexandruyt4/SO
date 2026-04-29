@@ -63,6 +63,7 @@ void setup_district(const char *district) {
     char symlink_name[MAX_PATH];
     snprintf(symlink_name, sizeof(symlink_name), "active_reports-%s", district);
     
+    
     struct stat sym_stat;
     if (lstat(symlink_name, &sym_stat) == -1) {
         symlink(path, symlink_name);
