@@ -8,6 +8,7 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 
+
 void cmd_add(const char *district, const char *user, const char *role) {
     setup_district(district);
     

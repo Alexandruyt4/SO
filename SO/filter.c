@@ -10,6 +10,7 @@ int parse_condition(const char *input, char *field, char *op, char *value) {
     return 0;
 }
 
+
 int match_condition(Report *r, const char *field, const char *op, const char *value) {
     if (strcmp(field, "severity") == 0) {
         int val = atoi(value);
